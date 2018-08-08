@@ -12,12 +12,12 @@ public abstract class TriggerHandler {
         }
     }
 
-    protected virtual void executeBeforeInsert(List<Sobject> newRecordList) {}
-    protected virtual void executeBeforeUpdate(List<Sobject> updatedRecordList, Map<Id, Sobject> updatedRecordMap, List<Sobject> oldRecordList, Map<Id, Sobject> oldRecordMap) {}
-    protected virtual void executeBeforeDelete(List<Sobject> deletedRecordList, Map<Id, Sobject> deletedRecordMap) {}
-    protected virtual void executeAfterInsert(List<Sobject> newRecordList, Map<Id, Sobject> newRecordMap) {}
-    protected virtual void executeAfterUpdate(List<Sobject> updatedRecordList, Map<Id, Sobject> updatedRecordMap, List<Sobject> oldRecordList, Map<Id, Sobject> oldRecordMap) {}
-    protected virtual void executeAfterDelete(List<Sobject> deletedRecordList, Map<Id, Sobject> deletedRecordMap) {}
-    protected virtual void executeAfterUndelete(List<Sobject> undeletedRecordList, Map<Id, Sobject> undeletedRecordMap) {}
+    protected virtual void executeBeforeInsert(List<Sobject> newRecords) {}
+    protected virtual void executeBeforeUpdate(List<Sobject> updatedRecords, Map<Id, Sobject> updatedRecordsById, List<Sobject> oldRecords, Map<Id, Sobject> oldRecordsById) {}
+    protected virtual void executeBeforeDelete(List<Sobject> deletedRecords, Map<Id, Sobject> deletedRecordsById) {}
+    protected virtual void executeAfterInsert(List<Sobject> newRecords, Map<Id, Sobject> newRecordsById) {}
+    protected virtual void executeAfterUpdate(List<Sobject> updatedRecords, Map<Id, Sobject> updatedRecordsById, List<Sobject> oldRecords, Map<Id, Sobject> oldRecordsById) {}
+    protected virtual void executeAfterDelete(List<Sobject> deletedRecords, Map<Id, Sobject> deletedRecordsById) {}
+    protected virtual void executeAfterUndelete(List<Sobject> undeletedRecords, Map<Id, Sobject> undeletedRecordsById) {}
 
 }
