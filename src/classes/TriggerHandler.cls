@@ -1,3 +1,7 @@
+/******************************************************************************************************
+* This file is part of the Simple Trigger handler project, released under the MIT License.            *
+* See LICENSE file or go to https://github.com/jongpie/SimpleTriggerHandler for full license details. *
+******************************************************************************************************/
 public abstract class TriggerHandler {
 
     public void execute() {
